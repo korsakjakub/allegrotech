@@ -16,3 +16,11 @@ function filterNames(){
         }
     }
 }
+
+let eraseButton = document.getElementById('wyczysc');
+
+eraseButton.onclick = function() {
+    document.getElementById('text-field').value = '';
+    filterNames();
+};
+
