@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <title>Książki o Javascript</title>
+    </head>
+    <body>
+
+        <div class='grid'>
+        <header>
+            <div class='logo-wrapper'>
+                <div class='square'>
+                    <div class='logo-text'>JS</div>
+                    <div class='text'>'owe książki</div>
+                </div>
+            </div>
+            <hr class='dashed-hr'>
+        </header>
+
+        <aside>
+            <h2>Sortuj po</h2>
+            <ul>
+                <li><input onclick='sort("pages")' name="sort" type="radio"> ilości stron</li>
+                <li><input onclick='sort("pub-date")' name="sort" type="radio"> dacie wydania</li>
+                <li><input onclick='sort("author")' name="sort" type="radio"> nazwisku autora</li>
+            </ul>
+            <hr>
+            <h2>Pokaż tylko</h2>
+            <ul>
+                <li>Powyżej <input id='text-field' class='text-field' type=text> stron</li>
+            </ul>
+
+            <hr>
+            <button id='wyczysc' ><b>Wyczyść</b></button>
+
+        </aside>
+        <main>
+            <ol id='book-wrapper' class='book-wrapper'>
+            </ol>
+        </main>
+
+        <footer>
+
+        </footer>
+
+        </div>
+
+        <!-- the ligthboxes for books divs -->
+        <div class'book-lightboxes'>
+            <div id='book-item-1' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/9780596517748/lrg.jpg'></img>
+                </div>
+            </div>
+            <div id='book-item-2' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/9780596000486/lrg.jpg'></img>
+                </div>
+            </div>
+            <div id='book-item-3' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/0636920025832/lrg.jpg'></img>
+                </div>
+            </div>
+            <div id='book-item-4' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/0636920027713/lrg.jpg'></img>
+                </div>
+            </div>
+            <div id='book-item-5' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/0636920033141/lrg.jpg'></img>
+                </div>
+            </div>
+            <div id='book-item-6' class='book-lightbox'>
+                <div class='book-item'>
+                    <a href='#' class='close'></a>
+                    <img src='https://covers.oreillystatic.com/images/0636920047124/lrg.jpg'></img>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type='text/javascript' src='js/sort.js'></script>
+    <script type='text/javascript' src='js/filter.js'></script>
+
+</html>
